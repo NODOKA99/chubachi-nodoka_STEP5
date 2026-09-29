@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="backcolor" onclick="changeColor()">背景色を変更</button>
+
+  <div>
+      <input type="text" id="text" name="text">
+      <button type="button" id="show-btn" onclick="showText()">表示</button>
+      <button type="button" id="add-btn" onclick="addTable()">追加</button>
+      </div>
+
+    <!--ここに次の行、次の行へと結果が表示される-->
+    <div id="output-container">表示エリア</div>
+
+    <!--行数カウント-->
+    <div class="count-area">
+      現在の行数:<span id="row-count">0</span>件
+    </div>
+
+    <!--表-->
+    <table border="1" class="custom-table">
+      <thead>
+        <tr>
+      <th>内容</th>
+      <th>操作</th>
+      </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+
+  <script src="style.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+/* 新しく表示された文字（最新の1行）に付けるハイライトの見た目 */
+.text-item {
+  background-color: yellow;
+  /* 左側の黄色いアクセント線 */
+  padding: 8px 12px 8px 0;
+  margin: 5px 0;
+  width: fit-content;
+  /* 文字の長さに背景幅を合わせる */
+}
+
+/* テーブル内のテキストだけ左寄せにする */
+.custom-table td.text-cell {
+  text-align: left;
+}
+
+/* --- 💡【新設】表示ボタンを消すためのクラス --- */
+.hidden {
+  display: none;
+}
